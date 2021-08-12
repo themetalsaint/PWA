@@ -1,0 +1,22 @@
+{
+    "name": "Budget app",
+    "short_name": "Budget",
+    "icons": [
+      {
+        "src": "icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "/",
+    "description": "Allows you to update your earnings and spendings in real time - ON or OFF line.",
+    "background_color": "#01579b",
+    "theme_color": "#808080"
+  }
