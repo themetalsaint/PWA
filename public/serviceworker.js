@@ -1,3 +1,8 @@
+const CACHE_NAME = 'my-site-cache-v1';
+const DATA_CACHE_NAME = 'data-cache-v1';
+  const STATIC_CACHE = "static-cache-v1"; 
+  const DATA_CACHE_TIME = "data-cache-v1";
+
 const FILES_TO_CACHE = [
     "/",
     "/icons/icon-192x192.png",
@@ -8,9 +13,6 @@ const FILES_TO_CACHE = [
     "/db.js",
     "/manifest.webmanifest",
   ];
-  
-  const STATIC_CACHE = "static-cache-v1"; 
-  const DATA_CACHE_TIME = "data-cache-v1"; 
   
   self.addEventListener("install", (event) => {
     event.waitUntil(
@@ -54,9 +56,7 @@ const FILES_TO_CACHE = [
                               return response;
                           })
                           .catch(() => caches.match(event.request));
-  
                   })
-                   
           );
           return;
       }
